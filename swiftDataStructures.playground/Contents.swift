@@ -2,6 +2,8 @@
 
 import UIKit
 
+//LinkedList
+
 final class LinkedList<T> {
     final class Node<T> {
         var next: Node<T>?
@@ -47,3 +49,17 @@ final class LinkedList<T> {
     
     
 }
+
+//Binary Search Tree - from RayWanderlich
+
+class Node<T> {
+    var value: T
+    var leftChild: Node?
+    var rightChild: Node?
+    
+    init(_ value: T) {
+        self.value = value
+    }
+}
+
+
