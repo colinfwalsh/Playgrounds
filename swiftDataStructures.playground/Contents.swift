@@ -186,3 +186,29 @@ tree.insert(newValue: 9)
 
 tree.traverseInOrder { print($0) }
 
+final class BinarySearchTreeRef<T> {
+    
+    var root: Node?
+    
+    final class Node<T> {
+        var left: Node?
+        var right: Node?
+        var data: T
+        
+        init (_ data: T) {
+            self.data = data
+        }
+    }
+    
+    func lookup(value: T) -> Node {
+        
+    }
+    
+    func insert(value: T) -> BinarySearchTreeRef {
+        if self.root.data == nil {
+            return
+        }
+        
+        return BinarySearchTreeRef()
+    }
+}
